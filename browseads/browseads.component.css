@@ -1,0 +1,64 @@
+
+
+
+
+
+/* products image designs */
+
+    /* Your existing styles here */
+    .products-wrapper {
+        
+        display: flex;
+        justify-content: normal;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: stretch;
+           /* Adjust this as needed */
+        }
+    
+        .product-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px;
+          border: 1px solid #ccc;
+          width: 200px;
+          margin: 10px;
+          transition: transform 0.3s ease-in-out;
+        }
+    
+        .product-container:hover {
+          transform: scale(1);
+          cursor: pointer;
+        }
+    
+        .product-container img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+        }
+        .product-container img:hover
+        {
+          transform: translateY(-20px);
+          
+        }
+    
+        .product-details {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+    
+        .product-description {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+        .price{
+          color: red;
+          font-size:smaller;
+        }
+        
+        .newprice{
+          color: green;
+        }
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Classy Logo">
+    </div>
+    <a href="">Home</a>
+    <a href="browsead">BrowseAds</a>
+    <a href="about">About</a>
+    <a href="contact">Contact</a>
+    <div class="post-ad">
+      <a id="postAdButton" href="post">Post Ad</a>
+  </div>
+  </div>
+
+  <div class="search-bar"> 
+    <input type="text" placeholder="Product Name">
+    <input type="text" placeholder="Location">
+    <select>
+      <option value="" disabled selected>Categories</option>
+      <!-- Add your category options here -->
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+      <option value="furniture">Furniture</option>
+    </select>
+    <button>Search</button>
+  </div>
+</body>
+</html>
+<router-outlet></router-outlet>

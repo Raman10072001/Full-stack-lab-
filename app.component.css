@@ -1,0 +1,72 @@
+    /* Navbar styling */
+    .navbar {
+        overflow: hidden;
+        background-color: #FFF; /* White Background color */
+      }
+  
+      .navbar a {
+        float: left;
+        display: block;
+        color: #333; /* Text color */
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border-bottom: 2px solid transparent; /* Add transparent underline */
+      }
+  
+      .navbar a:hover {
+        border-bottom: 2px solid #333; /* Add underline on hover */
+      }
+  
+      .navbar .post-ad {
+        float: right;
+      }
+  
+      .navbar .post-ad button {
+        background-color:crimson; /* Button background color */
+        color: rgb(0, 0, 0);
+        padding: 14px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+      .navbar .post-ad button:hover {
+        background-color: #fc5c5c; /* Change button color on hover */
+      }
+  
+      .navbar .logo {
+        float: left;
+        padding: 5px;
+      }
+  
+      .navbar .logo img {
+        height: 40px; /* Adjust the image height as needed */
+      }
+
+      /* <!-- search bar --> */
+
+      .search-bar {
+        display: flex;
+        align-items: center;
+      }
+  
+      .search-bar input[type="text"],
+      .search-bar select {
+        padding: 10px;
+        margin: 0 5px;
+      }
+  
+      .search-bar button {
+        background-color: #000000; /* Search Button background color */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+      .search-bar button:hover {
+        background-color: crimson; /* Change button color on hover */
+      }
+

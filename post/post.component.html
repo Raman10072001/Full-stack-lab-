@@ -1,0 +1,73 @@
+<div class="header">
+    <h1>Post an Ad</h1>
+  </div>
+  
+  <div class="content">
+    <div class="ad-form">
+      <form (ngSubmit)="onSubmit()" [formGroup]="adForm">
+        <label for="title">Ad Title:</label>
+        <input type="text" formControlName="title">
+  
+        <label for="category">Category:</label>
+        <select formControlName="category">
+          <option value="electronics">Electronics</option>
+          <option value="clothing">Clothing</option>
+          <option value="furniture">Furniture</option>
+        </select>
+  
+        <label for="description">Description:</label>
+        <textarea formControlName="description" rows="4"></textarea>
+  
+        <label for="price">Price:</label>
+        <input type="text" formControlName="price">
+        
+        <label for="phone">Contact Phone:</label>
+        <input type="tel" formControlName="phone">
+  
+        <label for="email">Contact Email:</label>
+        <input type="email" formControlName="email">
+  
+        <label for="image">Upload Image</label>
+        <input type="file" formControlName="image" (change)="showImage($event)">
+        <button type="button" (click)="triggerFileUpload()">Select Image</button>
+  
+        <div id="imageContainer">
+          <img id="imagePreview" alt="Uploaded Image" [src]="imageSrc">
+        </div>
+  
+        <button type="submit">Post Ad</button>
+      </form>
+    </div>
+  </div>
+  
+  <table class="ad-details-table" *ngIf="submitted">
+    <tr>
+      <th>Ad Title</th>
+      <td>{{ adForm.value.title }}</td>
+    </tr>
+    <tr>
+      <th>Category</th>
+      <td>{{ adForm.value.category }}</td>
+    </tr>
+    <tr>
+      <th>Description</th>
+      <td>{{ adForm.value.description }}</td>
+    </tr>
+    <tr>
+      <th>Price</th>
+      <td>{{ adForm.value.price }}</td>
+    </tr>
+    <tr>
+      <th>Contact Email</th>
+      <td>{{ adForm.value.email }}</td>
+    </tr>
+    <tr>
+      <th>Contact Phone</th>
+      <td>{{ adForm.value.phone }}</td>
+    </tr>
+    <tr>
+      <th>Image</th>
+      <td><img [src]="imageSrc" style="max-width: 100px; max-height: 100px;"></td>
+    </tr>
+  </table>
+  
